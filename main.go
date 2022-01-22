@@ -12,7 +12,7 @@ import (
 var templates = template.Must(template.ParseFiles("templates/edit.html", "templates/view.html"))
 
 // Path validation
-// Operação vai sempre começar com edit, save ou edit
+// Operação vai sempre começar com edit, save ou view
 // após ela, deve existir o nome da página o qual é composto por letras maiusculas, minúsculas ou números
 var validPath = regexp.MustCompile("^/(edit|save|view)/([a-zA-Z0-9]+)$")
 
